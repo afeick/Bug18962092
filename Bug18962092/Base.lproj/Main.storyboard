@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="oqc-dh-KRG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="S8W-pD-6RP">
+            <objects>
+                <tableViewController id="uXB-bv-OCB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ipB-4D-3w0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="IIW-F6-OPI">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="216" id="ocV-Lg-xP9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ocV-Lg-xP9" id="ra2-vq-z4w">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tfq-rN-8ef">
+                                                    <rect key="frame" x="0.0" y="18" width="768" height="180"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="439242099.58389997">
+                                                        <!--2014-12-02 19:41:39 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tfq-rN-8ef" firstAttribute="leading" secondItem="ra2-vq-z4w" secondAttribute="leading" id="ENY-Fx-YdR"/>
+                                                <constraint firstAttribute="trailing" secondItem="tfq-rN-8ef" secondAttribute="trailing" id="Fmw-47-Gip"/>
+                                                <constraint firstItem="tfq-rN-8ef" firstAttribute="top" secondItem="ra2-vq-z4w" secondAttribute="top" id="G5d-qU-l5t"/>
+                                                <constraint firstAttribute="bottom" secondItem="tfq-rN-8ef" secondAttribute="bottom" id="dVM-Bv-JEZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Pos-1j-Wxj">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pos-1j-Wxj" id="24T-Fg-1Ya">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="XEk-xI-RNu">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XEk-xI-RNu" id="Bli-eF-pk7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uXB-bv-OCB" id="uRl-19-T0C"/>
+                            <outlet property="delegate" destination="uXB-bv-OCB" id="k5m-jL-c6J"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="RLk-oX-cvi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAo-5n-cRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438.72" y="1481.3866666666668"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3El-Gc-mOm">
+            <objects>
+                <navigationController id="oqc-dh-KRG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryp-vQ-uX8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uXB-bv-OCB" kind="relationship" relationship="rootViewController" id="Vn9-MI-2hr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmy-CI-tcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232.96000000000001" y="1481.3866666666668"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
